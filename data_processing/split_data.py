@@ -14,9 +14,8 @@ def create_directories(path):
         for dataset in splitted_datasets:
                 os.makedirs(path+datatype+dataset, exist_ok=True)
 
-
 def split_data():
-    path = "tacodataset_small_offcial_yolo_format/"
+    path = "tacodataset_small_official_yolo_format/"
     create_directories(path)
 
     images = os.listdir("output/images")

@@ -1,3 +1,4 @@
 data/batch_*
 output
 tacodataset*
+__pycache__
