@@ -1,0 +1,73 @@
+path: /kaggle/working/
+train: images/train
+val: images/val
+
+names:
+  0: metal&plastic
+  1: paper
+  2: electronic
+  3: glass
+  4: bio
+  5: other
+
+names:
+  0: Aluminium foil
+  1: Battery
+  2: Aluminium blister pack
+  3: Carded blister pack
+  4: not empty plastic bottle
+  5: clear plastic bottle
+  6: glass bottle
+  7: metal bottle cap
+  8: plastic bottle cap
+  9: Broken glass
+  10: food can
+  11: aerosol can
+  12: drink can
+  13: toilet tube
+  14: other carton
+  15: egg carton
+  16: drink carton
+  17: carton boxes
+  18: Corrugated carton
+  19: pizza box carton
+  20: paper cup
+  21: plastic cup
+  22: foam cup
+  23: glass cup
+  24: other plastic cup
+  25: food waste
+  26: glass jar
+  27: plastic lid
+  28: metal lid
+  29: other plastic
+  30: magazine paper
+  31: tissue papper
+  32: wrapping paper
+  33: other
+  34: paper bag
+  35: Paper bag-?
+  36: "Plastic bag & wrapper",
+  37: "Plastic bag & wrapper",
+  38: "Plastic bag & wrapper",
+  39: "Plastic bag & wrapper",
+  40: "Plastic bag & wrapper",
+  41: "Plastic bag & wrapper",
+  42: "Plastic bag & wrapper",
+  43: "Plastic container",
+  44: "Plastic container",
+  45: "Plastic container",
+  46: "Plastic container",
+  47: "Plastic container",
+  48: "Plastic glooves",
+  49: "Plastic utensils",
+  50: "Pop tab",
+  51: "Rope & strings",
+  52: "Scrap metal",
+  53: "Shoe",
+  54: "Squeezable tube",
+  55: "Straw",
+  56: "Straw",
+  57: "Styrofoam piece",
+  58: "Unlabeled litter",
+  59: "Cigarette",

@@ -15,7 +15,7 @@ def coco2yolo(category,bbox,size):
     return [category,x,y,new_width,new_height]
 
 
-def move_files_and_create_labels(annotations_file_name, prefix):
+def move_files_and_create_yolo_boxes(annotations_file_name, prefix):
     
     new_img_path = "output/images/"
     new_ano_path = "output/labels/"
@@ -58,4 +58,4 @@ def move_files_and_create_labels(annotations_file_name, prefix):
 
 if __name__ == "__main__":
     print("test")
-    move_files_and_create_labels("data/annotations.json", "official")
+    move_files_and_create_yolo_boxes("data/annotations.json", "official")

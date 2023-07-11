@@ -1,6 +1,69 @@
 import os
 
-dct = {
+new_dct = {
+    0: 0, #"Aluminium foil",
+    1: 2, #"Battery",
+    2: 0, #"Blister pack",
+    3: 0, #"Blister pack",
+    4: 0, #"plastic Bottle",
+    5: 0, #"plastic Bottle", ?? is this glass bottle or plastic bottle finally
+    6: 3, #"glass Bottle",
+    7: 0, #"metal Bottle cap",
+    8: 0, #"plastic Bottle cap",
+    9: 3, #"Broken glass",
+    10: 0, #"Can",
+    11: 0,
+    12: 0,
+    13: 1,
+    14: 1,
+    15: 1,
+    16: 1,
+    17: 1,
+    18: 1,
+    19: 1,
+    20: 1,
+    21: 0,
+    22: 0,
+    23: 3,
+    24: 0,
+    25: 4,
+    26: 3,
+    27: 0,
+    28: 0,
+    29: 0,
+    30: 1,
+    31: 1,
+    32: 1,
+    33: 1,
+    34: 1,
+    35: 1,
+    36: 0,
+    37: 0,
+    38: 0,
+    39: 0,
+    40: 0,
+    41: 0,
+    42: 0,
+    43: 0,
+    44: 0,
+    45: 0,
+    46: 0,
+    47: 0,
+    48: 0,
+    49: 0,
+    50: 0,
+    51: 5,
+    52: 0,
+    53: 5,
+    54: 0,
+    55: 0,
+    56: 1,
+    57: 1,
+    58: 5,
+    59: 5,
+}
+
+dct_xxxx = {
     0: "Aluminium foil",
     1: "Battery",
     2: "Blister pack",
@@ -62,7 +125,7 @@ dct = {
     58: "Unlabeled litter",
     59: "Cigarette",
 }
-output = {
+output_xxx = {
     "Aluminium foil" : 0,
     "Battery": 2,
     "Blister pack": 0,
@@ -100,8 +163,8 @@ def swap_labels_in_file(path, filename):
         for line in lines:
             data = line.split(" ")
             old_class = int(data[0])
-            tmp = dct[old_class]
-            new_class = output[tmp]
+            #tmp = dct[old_class]
+            new_class = new_dct[old_class]
             new_line = str(new_class)
             data[0] = new_line
             new_lines.append(data)

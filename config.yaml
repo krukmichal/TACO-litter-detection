@@ -1,0 +1,14 @@
+path: /kaggle/working/
+train: images/train
+val: images/val
+
+nc: 6
+
+names:
+  0: metal&plastic
+  1: paper
+  2: electronic
+  3: glass
+  4: bio
+  5: other
+

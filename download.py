@@ -44,11 +44,17 @@ with open(args.dataset_path, 'r') as f:
             # Load and Save Image
             if_need_resizing=False
             response = None
+
+            """
             if url_resized != None:
                 response = requests.get(url_resized)
             else:
                 if_need_resizing=True
                 response = requests.get(url_original)
+            """
+
+            response = requests.get(url_original)
+
 
             #img = Image.open(BytesIO(response.content))
             #if img._getexif():
@@ -61,7 +67,7 @@ with open(args.dataset_path, 'r') as f:
                     img.write(response.content)
             else:
                 print("response error")
-
+            """
             if if_need_resizing:
                 img = cv2.imread(file_path)
                 print("original dimensions: ", img.shape)
@@ -75,6 +81,7 @@ with open(args.dataset_path, 'r') as f:
                 print("resized dimensions : ", resized.shape)
                 cv2.imwrite(file_path, resized)
                 print("resized: ", file_path)
+            """
 
         # Show loading bar
         bar_size = 30
